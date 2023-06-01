@@ -5,6 +5,8 @@ mov ss, ax
 mov sp, 4096d
 mov ax, 7c0h
 
+call kernel_main
+
 jmp $
 
 times 510-($-$$) db 0
